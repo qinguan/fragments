@@ -3,6 +3,8 @@
 def revSentence(sentence):
     """
     the function is used to reverse the words order in one sentence.
+    eg.
+    this is a real world. ---> world real a is this
     """
     words = sentence.split(' ')
     words.reverse()
