@@ -1,20 +1,27 @@
 #! /usr/bin/env python
 
-def _prompt(letters='yn',default=None):
-    """
+"""
+a useful function for prompt.
+"""
+
+def _prompt(letters='yn', default=None):
+
+    r"""
     Wait for the user to type a character (and hit Enter). If the user enters
     one of the characters in letters, return that character. If the user hits
     Enter without entering a character, and default is specified, returns
     `default`, Otherwise, asks the user to enter a character again. 
     """
+
+    import sys
     while True:
         try:
-            input = sys.stdin.readline().strip()
+            inputstr = sys.stdin.readline().strip()
         except KeyboardInterrupt:
             sys.exit(0)
-        if input and input in letters:
-            return input
-        if default is not None and input == '':
+        if inputstr and inputstr in letters:
+            return inputstr
+        if default is not None and inputstr == '':
             return default
         print 'Come again?'
 
