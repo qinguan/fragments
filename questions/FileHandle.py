@@ -97,6 +97,6 @@ def del_duplicate_line_in_file(filename):
     return '\n'.join(res_line)
 
 if __name__ == '__main__':
-    print count_duplicate_lines('E:/python/test.txt')
-    show_line_without_given_character('E:/python/test.txt','48')
-    print del_duplicate_line_in_file('E:/python/test.txt')
+    print count_duplicate_lines('test.txt')
+    show_line_without_given_character('test.txt','48')
+    print del_duplicate_line_in_file('test.txt')
