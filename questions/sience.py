@@ -244,11 +244,11 @@ def print_all_n_subset(n,k):
         print i
     
 if __name__ == "__main__":
-    #test_calculate_angle()
-    #test_get_intersection()
-    #test_find_missing_integer()
-    #test_find_nth_item_in_array()
-    #test_is_string_balanced()
-    #test_encode_with_RLE()
-    #test_del_duplicate_item()
-    test_balanced_list()
+    test_calculate_angle()
+    test_get_intersection()
+    test_find_missing_integer()
+    test_find_nth_item_in_array()
+    test_is_string_balanced()
+    test_encode_with_RLE()
+    test_del_duplicate_item()
+    test_balanced_list_2()
