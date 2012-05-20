@@ -167,7 +167,7 @@ def test_del_duplicate_item():
 
 
 
-# 9. given two list, exchange the item ,make the diff minimun
+# 9. given two list, exchange the item ,make the diff minimun of sum(list)
 def balanced_list(a,b):
     if type(a) == list:
         a.sort()
