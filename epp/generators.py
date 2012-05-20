@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/env python
 
 def fibonacci():
     a, b = 0, 1
@@ -10,14 +10,19 @@ print [fib.next() for i in range(10)]
 
 #********************************************#
 import multitask
-import time
 
 def coroutine_1():
+    """
+    .
+    """
     for i in range(3):
         print 'c1'
         yield
 
 def coroutine_2():
+    """
+    .
+    """
     for i in range(3):
         print 'c2'
         yield i
