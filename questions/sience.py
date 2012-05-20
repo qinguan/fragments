@@ -206,7 +206,24 @@ def balanced_list(a,b):
 def test_balanced_list():
 
     balanced_list([1,3,4,100],[2,5,6,50])
-    
+   
+def balanced_list_2(arr1,arr2,n):
+    enum = combination_enumerator(arr1+arr2,n) 
+    cur_min = abs(sum(arr1)) + abs(sum(arr2))
+    cur_list = arr1
+    avg = (sum(arr1) + sum(arr2)) / 2
+    for i in enum:
+        cur = abs(sum(i) - avg)
+        if cur < cur_min:
+            cur_list = i
+            cur_min = cur
+    left_list = [var for var in (arr1 + arr2) if var not in cur_list]
+    return cur_list,left_list
+
+def test_balanced_list_2():
+    item1 = [1,4,5,800]
+    item2 = [2,3,6,700]
+    print balanced_list_2(item1,item2,4)[0],balanced_list_2(item1,item2,4)[1]
     
 # 10. You are given a set of numbers 0 - n. Given a k, print all subsets of size k.
 def combination_enumerator(items, n=None):
